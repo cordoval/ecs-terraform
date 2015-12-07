@@ -1,26 +1,22 @@
 [
     {
         "name": "test-http",
-        "image": "cordoval/amazon-ecs-sample",
+        "image": "alexgaynor/test-http",
         "cpu": 10,
         "memory": 512,
         "links": [],
         "portMappings": [
             {
-                "containerPort": 80,
+                "containerPort": 8080,
                 "hostPort": 8080,
                 "protocol": "tcp"
             }
         ],
-        "mountPoints": [],
         "essential": true,
-        "entryPoint": [
-          "/usr/sbin/apache2",
-          "-D",
-          "FOREGROUND"
-        ],
+        "entryPoint": [],
         "command": [],
         "environment": [],
+        "mountPoints": [],
         "volumesFrom": []
     }
 ]
